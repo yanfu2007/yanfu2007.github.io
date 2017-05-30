@@ -1,1 +1,35 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+<style>body{padding:0;margin:0;width:100%;height:100%;background-color:#e9ebee}body div{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default}body div.hidden{visibility:hidden}body>div#container{display:flex;flex-direction:column;padding:0 4px;margin:0;border:0}body>div#container>div#ad{width:468px;height:60px;padding:0 8px;margin-top:8px;background-color:#fff}div#header{width:100%;height:32px;padding:8px 0;background-color:#006bb3}div#header>div#title{float:left;height:32px;margin-left:4px;margin-right:12px;font-size:18px;vertical-align:-10x;color:#fff}div#header>div#titleIcon{float:left;background-repeat:no-repeat;background-image:url("icons.png");height:32px;width:32px;margin-left:2px;margin-right:2px;background-image:url("img/ViolinEscort.svg")}div#header>div#controls{float:right}div#header>div#controls>div#control{float:right;height:32px}div#header>div#controls>div.control.gray{opacity:.1}div#header>div#controls>div.control{float:left;background-repeat:no-repeat;background-image:url("icons.png");height:32px;width:32px;margin-left:2px;margin-right:2px;transform:scale(0.9)}div#header>div#controls>div.control#restart{transform:scale(1.0);background-position:0 -96px}div#header>div#controls>div.control#open{background-position:0 -64px}div#header>div#controls>ddiv.control#view{background-position:0 -192px}div#header>div#controls>div.control#download{background-position:0 0}div#header>div#controls>div.control#share{background-position:0 -160px}div#header>div#controls>div#share.control.shown{background-position:0 -32px}body>div#container>div#music{height:160px;padding:0 8px;margin-top:8px;background-color:#fff}body>div#container>div#notes{width:100%;bottom:32px;padding:0;margin-top:8px;display:flex;flex-direction:row;background-color:#fff}body>div#container>div#notes>div.note{width:80px;height:60px;margin:8px 8px;border:1px solid #404040;border-radius:4px;display:flex;justify-content:center;align-items:center}body>div#container>div#notes>div.note>div.natural{font-size:32px}body>div#container>div#notes>div.note>div.accidental{font-size:20px}body>div#container>div#notes>div.note>div.octave{font-size:20px}body>div#loadingBack{position:absolute;top:48px;left:0;width:100%;height:100vh;overflow:hidden;background-color:gray;opacity:.1;z-index:1;display:flex;justify-content:center;align-items:center}body>div#loadingFront{position:absolute;top:50%;left:50%;transform:translate(-100px,-100px);width:200px;height:200px;background-image:url("img/loading.gif");background-repeat:no-repeat;background-position:center;z-index:2}</style>
+<script type="text/javascript" charset="UTF-8">var Loader=function(){function a(a){var c=document.createElement("script");c.src=a;c.onload=function(){d[a].ts=(new Date).getTime();var b=!0,c;for(c in d)if(d.hasOwnProperty(c)&&0>=d[c].ts){b=!1;break}b&&(k.cancelEventListeners(),h(e))};document.querySelectorAll("head")[0].appendChild(c)}var e=[],d={},h=null,k=function(){function a(a){e.push({x:a.clientX,y:a.clientY,type:"start",ts:(new Date).getTime()})}function c(a){e.push({x:a.clientX,y:a.clientY,type:"move",ts:(new Date).getTime()})}function b(a){e.push({x:a.clientX,
+y:a.clientY,type:"end",ts:(new Date).getTime()})}var d="mousedown",f="mousemove",g="mouseup";"ontouchstart"in window&&(d="touchstart",f="touchmove",g="touchend");window.addEventListener(d,a);window.addEventListener(f,c);window.addEventListener(g,b);return{cancelEventListeners:function(){window.removeEventListener(d,a);window.removeEventListener(f,c);window.removeEventListener(g,b)}}}();return{load:function(e,c){for(var b=0;b<e.length;b++)d.hasOwnProperty(e[b])||(d[e[b]]={ts:0});h=c;window.onload=
+function(){for(b in d)d.hasOwnProperty(b)&&a(b)}}}}();Loader.load(["https://unpkg.com/vexflow@1.2.83/releases/vexflow-debug.js","index.html_v1.js"],function(a){var e={};a=0<a.length?a[a.length-1]:null;null!==a&&"end"!==a.type&&(e.unhandledEvent=a);App.initialize(e)});
+</script>
+</head>
+<body>
+<div id="header" class="ViolineScales">
+  <div id="title">ViolinEscort</div>
+  <div id="titleIcon" class="hidden"></div>
+  <div id="controls">
+    <div class="control" id="restart"></div>
+    <div class="control" id="open"></div>
+	<div class="control" id="view"></div>
+	<div class="control" id="download"></div>
+	<div class="control" id="share"></div>
+  </div>
+</div>
+<div id="container">
+  <div id="ad"></div>
+  <div id="music"></div>
+  <div id="notes">
+    <div class="note" id="playAllNotesAndMoveNext">Next</div>
+  </div>
+</div>
+<div id="sharing" class="hidden"></div>
+<div id="loadingBack" class="hidden"></div>
+<div id="loadingFront" class="hidden"></div>
+</body>
+</html>
