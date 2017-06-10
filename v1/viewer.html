@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+<style>html{overflow:hidden}body{padding:0;margin:0;width:100%;height:100%;background-color:#e9ebee}body div{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default}body div.hidden{display:none;!important}body>div#container{display:flex;flex-direction:column;padding:0 4px;margin:0;border:0}body>div#container>div#ad{padding:0 8px;margin-top:4px;background-color:#fff;display:flex;justify-content:center}body>div#container>div#ad>div#banner{width:468px;height:60px;background-color:#fafafa}body>div#container>div#ad>div#half{width:234px;height:60px;background-color:#fafafa}body>div#container>div#printFooter{margin-top:4px;padding-top:16px;height:48px;font-size:20px;text-align:center;background-color:#fff;height:48px}@media only screen and (max-width:500px){body>div#container>div#ad>div#banner{display:none}}@media only screen and (min-width:501px){body>div#container>div#ad>div#half{display:none}}@media print{body{padding-top:64px;height:297mm}.noprint,.noprint *{display:none !important}size:auto;margin:0}div#header{width:100%;height:32px;padding:8px 0;background-color:#006bb3;display:flex;flex-direction:row;justify-content:flex-start}div#header>div#title{flex-grow:1;margin-left:4px}div#header>div#controls{flex-grow:100;margin-right:4px;display:flex;flex-direction:row;justify-content:flex-end}div#header>div#title>div#text{width:120px;height:32px;font-size:18px;vertical-align:-10x;color:#fff}div#header>div#title>div#icon{background-repeat:no-repeat;background-image:url("img/icons.png");height:32px;width:32px;transform:scale(0.75);background-position:0 -576px;border-radius:3px}@media only screen and (max-width :300px){div#header>div#title>div#text{display:none}}@media only screen and (min-width :301px){div#header>div#title>div#icon{display:none}}div#header>div#controls>div.control{background-repeat:no-repeat;background-image:url("img/icons.png");height:32px;width:32px;margin-left:2px;margin-right:2px}div#header>div#controls>div.control.gray{opacity:.1}div#header>div#controls>div.control#play{transform:scale(0.9);background-position:0 -192px}div#header>div#controls>div.control#view{transform:scale(0.75);background-position:0 -384px}div#header>div#controls>div.control#open{transform:scale(0.8);background-position:0 -160px}@media only screen and (max-height:300px){body>div#container>div#music{display:none}}body>div#container>div#musicTitle{margin-top:4px;height:32px;font-size:20px;display:flex;justify-content:center;align-items:flex-end;background-color:#fff}body>div#container>div#music{height:172px;background-color:#fff}body>div#loading{position:absolute;top:120px;left:50%;transform:translate(-100px,0);width:200px;height:200px;background-image:url("img/loading.gif");background-repeat:no-repeat;background-position:center;z-index:2}body>div#container>div#music.viewer{min-height:172px;height:calc(100vh - 248px)}body>div#container>div#controls{width:100%;bottom:32px;padding:0;margin-top:4px;display:flex;flex-direction:row;justify-content:flex-left;background-color:#fff}body>div#container>div#controls>div.control{width:50px;height:36px;margin:8px 8px;background-repeat:no-repeat;background-image:url("img/icons.png")}body>div#container>div#controls>div.control.disabled{opacity:.66}body>div#container>div#controls>div.control#begin{background-position:0 0}body>div#container>div#controls>div.control#pre{background-position:0 -256px}body>div#container>div#controls>div.control#next{background-position:0 -128px}body>div#container>div#controls>div.control#end{background-position:0 -32px}body>div#container>div#controls>div.control#print{background-position:0 -288px}</style>
+<script type="text/javascript" charset="UTF-8">var Loader=function(){function e(d){var b=document.createElement("script");b.src=d;b.onload=function(){c[d].ts=(new Date).getTime();var a=!0,b;for(b in c)if(c.hasOwnProperty(b)&&0>=c[b].ts){a=!1;break}a&&f()};document.querySelectorAll("head")[0].appendChild(b)}var c={},f=null;return{load:function(d,b){for(var a=0;a<d.length;a++)c.hasOwnProperty(d[a])||(c[d[a]]={ts:0});f=b;window.onload=function(){for(a in c)c.hasOwnProperty(a)&&e(a)}}}}();Loader.load(["ViolinEscort_v1.js"],function(e){App.initialize()});
+</script>
+</head>
+<body>
+<div id="header" class="noprint">
+  <div id="title">
+    <div id="text">ViolinEscort</div>
+    <div id="icon"></div>
+  </div>
+  <div id="controls">
+    <div class="control" id="play"></div>
+	<div class="control" id="view"></div>
+    <div class="control" id="open"></div>
+  </div>
+</div>
+<div id="container">
+  <div id="ad" class="noprint">
+    <div id="half">1/2 Banner Ad</div>
+    <div id="banner">Banner Ad</div>
+  </div>
+  <div id="musicTitle"></div>
+  <div id="music" class="viewer"></div>
+  <div id="controls" class="noprint">
+    <div class="control disabled" id="begin"></div>
+    <div class="control disabled" id="pre"></div>
+    <div class="control disabled" id="next"></div>
+    <div class="control disabled" id="end"></div>
+    <div class="control" id="print"></div>
+  </div>
+  <div id="printFooter" class="hidden"></div>
+</div>
+<div id="loading" class="hidden noprint"></div>
+</body>
+</html>
