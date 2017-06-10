@@ -1,5 +1,0 @@
-<html>
-<script>
-alert("q=1: " + window.location);
-</script>
-</html>
